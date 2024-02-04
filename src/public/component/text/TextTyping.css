@@ -1,0 +1,256 @@
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .wrap {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .Textyping-h1 {
+    font-size: 12px;
+    font-family: monospace;
+    color: white;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    animation: typing320 4s steps(40) infinite alternate,
+      caret320 0.5s steps(2) infinite;
+  }
+
+  @keyframes caret320 {
+    from {
+      border-color: transparent;
+    }
+
+    to {
+      border-color: white;
+    }
+  }
+
+  @keyframes typing320 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 380px;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .wrap {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Textyping-h1 {
+    font-size: 17px;
+    font-family: monospace;
+    color: white;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    animation: typing 4s steps(22) infinite, caret 0.5s steps(2) infinite;
+  }
+}
+
+@media (min-width: 600px) {
+  .wrap {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Textyping-h1 {
+    font-size: 25px;
+    font-family: monospace;
+    color: white;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    animation: typing 4s steps(22) infinite, caret 0.5s steps(2) infinite;
+  }
+
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .wrap {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Textyping-h1 {
+    font-size: 25px;
+    font-family: monospace;
+    color: white;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    animation: typing 4s steps(22) infinite, caret 0.5s steps(2) infinite;
+  }
+}
+
+@media (min-width: 554px) {
+  /* big landscape tablets, laptops, and desktops */
+  .wrap {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Textyping-h1 {
+    font-size: 40px;
+    font-family: monospace;
+    color: white;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    animation: typing 5s steps(22) infinite, caret 0.5s steps(2) infinite;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  .wrap {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Textyping-h1 {
+    font-family: monospace;
+    color: white;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    animation: typing1281 4s steps(22) infinite alternate,
+      caret1281 0.5s steps(2) infinite;
+  }
+
+  @keyframes caret1281 {
+    from {
+      border-color: transparent;
+    }
+
+    to {
+      border-color: black;
+    }
+  }
+
+  @keyframes typing1281 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 554px;
+    }
+  }
+}
+
+@keyframes caret {
+  from {
+    border-color: transparent;
+  }
+
+  to {
+    border-color: black;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 550px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+@keyframes caret {
+  from {
+    border-color: transparent;
+  }
+
+  to {
+    border-color: black;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 550px;
+  }
+}
+
+#cycle:after {
+  -webkit-animation: cycle 4s infinite;
+  /* Safari 4+ */
+  -moz-animation: cycle 4s infinite;
+  /* Fx 5+ */
+  -o-animation: cycle 4s infinite;
+  /* Opera 12+ */
+  animation: cycle 4s infinite;
+  /* IE 10+, Fx 29+ */
+}
+
+#cycle:after {
+  animation-name: cycle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  content: "";
+}
+
+@keyframes cycle {
+  0% {
+    content: "Corgi";
+  }
+
+  25% {
+    content: "Shih Tzu";
+  }
+
+  50% {
+    content: "Pug";
+  }
+
+  75% {
+    content: "Dachshund";
+  }
+
+  100% {
+    content: "Corgi";
+  }
+}
