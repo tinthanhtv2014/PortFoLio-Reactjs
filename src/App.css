@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  height: 3000px;
+  background-color: rgb(10, 16, 30);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 .App-logo {

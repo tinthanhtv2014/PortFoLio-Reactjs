@@ -100,3 +100,73 @@
     /* Thay đổi giá trị này để khớp với chiều dài thực tế của văn bản */
   }
 }
+
+.image-content-about {
+  width: 100%;
+  height: 100%;
+}
+
+.image-content-about img {
+  width: 90%;
+  height: 100%;
+}
+
+.description-content {
+  text-align: left;
+  color: rgb(170, 168, 168);
+}
+
+.job-content {
+  text-align: left;
+  color: rgb(230, 174, 72);
+}
+
+.name-content {
+  text-align: left;
+  color: white;
+}
+.info-content {
+  text-align: left;
+  color: rgb(170, 168, 168);
+}
+
+.download-cv {
+  display: flex;
+  align-items: start;
+}
+
+.btn-download {
+  border-radius: 50px;
+  height: 45px;
+  width: 20%;
+  /* color: white; */
+  background-color: orange;
+}
+
+.abount {
+  color: orange;
+}
+
+.h1-content {
+  position: relative;
+}
+
+.h1-content::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgb(10, 16, 30) 30%,
+    white 40%,
+    orange 40%,
+    orange 60%,
+    white 60%,
+    rgb(10, 16, 30) 70%
+  );
+  display: flex;
+  align-self: center;
+}

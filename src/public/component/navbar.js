@@ -13,11 +13,11 @@ function MyComponent() {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark" className="navbar-container">
-        <Container className=" mt-3 mb-3">
-          <Navbar.Brand href="#home" className="ms-auto pr-3 pl-3">
+        <Container className=" mt-3 mb-3 ">
+          <Navbar.Brand href="#home" className=" pr-3 pl-3">
             Navbar
           </Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="me-auto mx-auto">
             <Nav.Link href="#home" className=" navbar-item">
               Home
             </Nav.Link>
@@ -42,13 +42,82 @@ function MyComponent() {
           </Nav>
         </Container>
       </Navbar>
-
-      <div className="image-content">
+      <div className="image-content" id="home">
         <img src={logo} alt="banner" />
         <div className="content">
           <div data-aos="zoom-out-down" className="content-animation">
             <h4>HELLO </h4>
             <TextTyping />
+          </div>
+        </div>
+      </div>
+
+      <div id="about" className="my-4"></div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="my-5 abount">
+        <h1 className="h1-content my-3">About Me</h1>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="image-container col-6 " data-aos="fade-up">
+            <div className="image-content-about mt-3">
+              <img src={logo} alt="banner" />
+            </div>
+          </div>
+          <div className="content-container col-6 " data-aos="fade-up">
+            <div className="name-content my-3">
+              <h2>Hi There! I'm Nguyen Tin Thanh</h2>
+            </div>
+            <div className="job-content my-3">
+              <h4>FullStack Developer</h4>
+            </div>
+            <div className="description-content my-3">
+              I am a Visual Designer with a strong focus on digital branding.
+              Visul design seeks to attract, inspire, create desires and otivate
+              people to respond to messages, with a view to making a favorable
+              impact.
+            </div>
+            <div className="info-content my-3">
+              <div className="info-container row my-2">
+                {" "}
+                <span className="col-2">Birthday </span>
+                <span className=" col-4">: May 24, 2003</span>
+              </div>
+
+              <div className="info-container row my-2">
+                {" "}
+                <span className="col-2">Phone: </span>
+                <span className="col-4">: +840395890398</span>
+              </div>
+
+              <div className="info-container row my-2">
+                <span className="col-2">Email</span>
+                <span className="col-5">: tinthanhtv2014@gmail.com</span>
+              </div>
+
+              <div className="info-container row my-2">
+                <span className="col-2">From </span>
+                <span className="col-4">: 313 Tra Vinh, Viet Nam</span>
+              </div>
+
+              <div className="info-container  row my-2">
+                {" "}
+                <span className="col-2">Language </span>
+                <span className="col-4">: EngLish, Vietnamese</span>
+              </div>
+
+              <div className="info-container  row my-2">
+                {" "}
+                <span className="col-2">FreeLance</span>
+                <span className="col-4">: Available</span>
+              </div>
+            </div>
+            <div className="download-cv">
+              <button className="btn-download">Download CV</button>
+            </div>
           </div>
         </div>
       </div>
