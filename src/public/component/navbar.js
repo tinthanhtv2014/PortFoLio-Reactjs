@@ -6,13 +6,23 @@ import Navbar from "react-bootstrap/Navbar";
 import AOS from "aos";
 import "../css/navbar.css";
 import logo from "../image/carousel.jpg";
+import icon1 from "../image/icon1.png";
+import icon2 from "../image/icon2.png";
+import icon3 from "../image/icon3.png";
+import icon4 from "../image/icon4.png";
+import icon5 from "../image/icon5.png";
+import icon6 from "../image/icon6.png";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import TextTyping from "./text/TextTyping";
 AOS.init();
 function MyComponent() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark" className="navbar-container">
+      <Navbar
+        bg="rgb(10, 16, 30)"
+        data-bs-theme="dark"
+        className="navbar-container"
+      >
         <Container className=" mt-3 mb-3 ">
           <Navbar.Brand href="#home" className=" pr-3 pl-3">
             Navbar
@@ -67,6 +77,7 @@ function MyComponent() {
               <img src={logo} alt="banner" />
             </div>
           </div>
+
           <div className="content-container col-6 " data-aos="fade-up">
             <div className="name-content my-3">
               <h2>Hi There! I'm Nguyen Tin Thanh</h2>
@@ -117,6 +128,91 @@ function MyComponent() {
             </div>
             <div className="download-cv">
               <button className="btn-download">Download CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about" className="my-4"></div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="my-5 abount">
+        <h1 className="h1-content my-3">SERVICE</h1>
+      </div>
+
+      <div className="container">
+        <div className="row block-container">
+          <div className="col-3 block-content mx-2 my-2 p-3">
+            <div className="block-image-content mx-auto my-3">
+              <img src={icon1} alt="" className="my-4" />
+            </div>
+            <div className="block-info-content my-1">
+              <h3>content</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
+              </p>
+            </div>
+          </div>
+          <div className="col-3 block-content mx-2 my-2 p-3">
+            <div className="block-image-content mx-auto my-3">
+              <img src={icon2} alt="" className="my-4" />
+            </div>
+            <div className="block-info-content my-1">
+              <h3>content</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
+              </p>
+            </div>
+          </div>
+          <div className="col-3 block-content mx-2 my-2 p-3">
+            <div className="block-image-content mx-auto my-3">
+              <img src={icon3} alt="" className="my-4" />
+            </div>
+            <div className="block-info-content my-1">
+              <h3>content</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
+              </p>
+            </div>
+          </div>
+          <div className="col-3 block-content mx-2 my-2 p-3">
+            <div className="block-image-content mx-auto my-3">
+              <img src={icon4} alt="" className="my-4" />
+            </div>
+            <div className="block-info-content my-1">
+              <h3>content</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
+              </p>
+            </div>
+          </div>
+          <div className="col-3 block-content mx-2 my-2 p-3">
+            <div className="block-image-content mx-auto my-3">
+              <img src={icon5} alt="" className="my-4" />
+            </div>
+            <div className="block-info-content my-1">
+              <h3>content</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
+              </p>
+            </div>
+          </div>
+          <div className="col-3 block-content mx-2 my-2 p-3">
+            <div className="block-image-content mx-auto my-3">
+              <img src={icon6} alt="" className="my-4" />
+            </div>
+            <div className="block-info-content my-1">
+              <h3>content</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
+              </p>
             </div>
           </div>
         </div>
