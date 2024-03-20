@@ -14,6 +14,7 @@ import icon5 from "../image/icon5.png";
 import icon6 from "../image/icon6.png";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import TextTyping from "./text/TextTyping";
+
 AOS.init();
 function MyComponent() {
   return (
@@ -34,7 +35,7 @@ function MyComponent() {
             <Nav.Link href="#about" className="navbar-item ">
               About
             </Nav.Link>
-            <Nav.Link href="#education" className="navbar-item ">
+            <Nav.Link href="#service" className="navbar-item ">
               Education
             </Nav.Link>
             <Nav.Link href="#skills" className="navbar-item ">
@@ -63,14 +64,12 @@ function MyComponent() {
       </div>
 
       <div id="about" className="my-4"></div>
-      <br />
-      <br />
-      <br />
-      <br />
+
       <div className="my-5 abount">
-        <h1 className="h1-content my-3">About Me</h1>
+        <div className="info-nen">ABOUT ME</div>
+        <h1 className="h1-content my-3">ABOUT ME</h1>
       </div>
-      <div className="container">
+      <div className="container color-container">
         <div className="row">
           <div className="image-container col-6 " data-aos="fade-up">
             <div className="image-content-about mt-3">
@@ -80,10 +79,12 @@ function MyComponent() {
 
           <div className="content-container col-6 " data-aos="fade-up">
             <div className="name-content my-3">
-              <h2>Hi There! I'm Nguyen Tin Thanh</h2>
+              <h2 className="h2-name-content">
+                Hi There! I'm Nguyen Tin Thanh
+              </h2>
             </div>
             <div className="job-content my-3">
-              <h4>FullStack Developer</h4>
+              <h4 className="h4-job-content">FullStack Developer</h4>
             </div>
             <div className="description-content my-3">
               I am a Visual Designer with a strong focus on digital branding.
@@ -94,7 +95,9 @@ function MyComponent() {
             <div className="info-content my-3">
               <div className="info-container row my-2">
                 {" "}
-                <span className="col-2">Birthday </span>
+                <span className="col-2">
+                  <i class="fa-sharp fa-solid fa-calendar-clock"></i> Birthday{" "}
+                </span>
                 <span className=" col-4">: May 24, 2003</span>
               </div>
 
@@ -132,83 +135,98 @@ function MyComponent() {
           </div>
         </div>
       </div>
-      <div id="about" className="my-4"></div>
+      <div id="service" className="my-4"></div>
       <br />
       <br />
-      <br />
-      <br />
+
       <div className="my-5 abount">
+        <div className="info-nen">SERVICE</div>
         <h1 className="h1-content my-3">SERVICE</h1>
       </div>
 
       <div className="container">
         <div className="row block-container">
-          <div className="col-3 block-content mx-2 my-2 p-3">
+          <div
+            className="col-3 block-content mx-2 my-2 p-3"
+            data-aos="fade-right"
+          >
             <div className="block-image-content mx-auto my-3">
               <img src={icon1} alt="" className="my-4" />
             </div>
             <div className="block-info-content my-1">
-              <h3>content</h3>
+              <h3 className="h3-block-info-content">Sketches</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                 eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
               </p>
             </div>
           </div>
-          <div className="col-3 block-content mx-2 my-2 p-3">
+          <div
+            className="col-3 block-content mx-2 my-2 p-3"
+            data-aos="fade-down"
+          >
             <div className="block-image-content mx-auto my-3">
               <img src={icon2} alt="" className="my-4" />
             </div>
             <div className="block-info-content my-1">
-              <h3>content</h3>
+              <h3 className="h3-block-info-content">UI/UX Design</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                 eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
               </p>
             </div>
           </div>
-          <div className="col-3 block-content mx-2 my-2 p-3">
+          <div
+            className="col-3 block-content mx-2 my-2 p-3"
+            data-aos="fade-left"
+          >
             <div className="block-image-content mx-auto my-3">
               <img src={icon3} alt="" className="my-4" />
             </div>
             <div className="block-info-content my-1">
-              <h3>content</h3>
+              <h3 className="h3-block-info-content">Product Design</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                 eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
               </p>
             </div>
           </div>
-          <div className="col-3 block-content mx-2 my-2 p-3">
+          <div
+            className="col-3 block-content mx-2 my-2 p-3"
+            data-aos="fade-right"
+          >
             <div className="block-image-content mx-auto my-3">
               <img src={icon4} alt="" className="my-4" />
             </div>
             <div className="block-info-content my-1">
-              <h3>content</h3>
+              <h3 className="h3-block-info-content">App Design</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                 eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
               </p>
             </div>
           </div>
-          <div className="col-3 block-content mx-2 my-2 p-3">
+          <div className="col-3 block-content mx-2 my-2 p-3" data-aos="fade-up">
             <div className="block-image-content mx-auto my-3">
               <img src={icon5} alt="" className="my-4" />
             </div>
             <div className="block-info-content my-1">
-              <h3>content</h3>
+              <h3 className="h3-block-info-content">Motion Graphics</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                 eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
               </p>
             </div>
           </div>
-          <div className="col-3 block-content mx-2 my-2 p-3">
+          <div
+            className="col-3 block-content mx-2 my-2 p-3"
+            data-aos="fade-left"
+          >
             <div className="block-image-content mx-auto my-3">
               <img src={icon6} alt="" className="my-4" />
             </div>
             <div className="block-info-content my-1">
-              <h3>content</h3>
+              <h3 className="h3-block-info-content">Responsive Design</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                 eos nesciunt temporibus vero, quam ducimus ipsum minima animi a

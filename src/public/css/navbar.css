@@ -121,10 +121,19 @@
   color: rgb(230, 174, 72);
 }
 
+.h4-job-content {
+  font-weight: 100;
+}
+
 .name-content {
   text-align: left;
   color: white;
 }
+
+.h2-name-content {
+  font-weight: 400;
+}
+
 .info-content {
   text-align: left;
   color: rgb(170, 168, 168);
@@ -147,8 +156,19 @@
   color: orange;
 }
 
+.info-nen {
+  font-size: 80px;
+  color: #101624;
+  z-index: -1;
+  transform: translate(0%, 60%);
+  font-weight: 700;
+}
+
 .h1-content {
   position: relative;
+  font-weight: 100;
+  color: orange;
+  z-index: 1;
 }
 
 .h1-content::after {
@@ -205,6 +225,11 @@
   transition: all 0.5s ease;
 }
 
+.h3-block-info-content {
+  font-weight: 200;
+  font-size: 20px;
+}
+
 .block-content:hover > .block-image-content img {
   filter: brightness(1);
 }
@@ -215,3 +240,7 @@
 .block-content:hover > .block-info-content h3 {
   color: orange;
 }
+/* 
+.color-container {
+  background-color: rgb(46, 97, 214);
+} */
