@@ -14,7 +14,7 @@ import icon5 from "../image/icon5.png";
 import icon6 from "../image/icon6.png";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import TextTyping from "./text/TextTyping";
-
+import "../css/navbarReponSive.css";
 AOS.init();
 function MyComponent() {
   return (
@@ -58,7 +58,7 @@ function MyComponent() {
         <div className="content">
           <div data-aos="zoom-out-down" className="content-animation">
             <h4>HELLO </h4>
-            <TextTyping />
+            <TextTyping className="texttyping" />
           </div>
         </div>
       </div>
@@ -71,13 +71,16 @@ function MyComponent() {
       </div>
       <div className="container color-container">
         <div className="row">
-          <div className="image-container col-6 " data-aos="fade-up">
-            <div className="image-content-about mt-3">
-              <img src={logo} alt="banner" />
+          <div className="image-container col-12 col-sm-6 " data-aos="fade-up">
+            <div className="image-content-about mt-3 col-12">
+              <img src={logo} alt="banner" className="col-12" />
             </div>
           </div>
 
-          <div className="content-container col-6 " data-aos="fade-up">
+          <div
+            className="content-container col-12 col-sm-6 "
+            data-aos="fade-up"
+          >
             <div className="name-content my-3">
               <h2 className="h2-name-content">
                 Hi There! I'm Nguyen Tin Thanh
@@ -95,41 +98,43 @@ function MyComponent() {
             <div className="info-content my-3">
               <div className="info-container row my-2">
                 {" "}
-                <span className="col-2">
+                <span className="col-sm-2 col-3">
                   <i class="fa-sharp fa-solid fa-calendar-clock"></i> Birthday{" "}
                 </span>
-                <span className=" col-4">: May 24, 2003</span>
+                <span className="col-sm-4 col-5">: May 24, 2003</span>
               </div>
 
               <div className="info-container row my-2">
                 {" "}
-                <span className="col-2">Phone: </span>
-                <span className="col-4">: +840395890398</span>
+                <span className="col-sm-2 col-3">Phone: </span>
+                <span className="col-sm-4 col-5">: +840395890398</span>
               </div>
 
               <div className="info-container row my-2">
-                <span className="col-2">Email</span>
-                <span className="col-5">: tinthanhtv2014@gmail.com</span>
+                <span className="col-sm-2 col-3">Email</span>
+                <span className="col-sm-5 col-8">
+                  : tinthanhtv2014@gmail.com
+                </span>
               </div>
 
               <div className="info-container row my-2">
-                <span className="col-2">From </span>
-                <span className="col-4">: 313 Tra Vinh, Viet Nam</span>
+                <span className="col-sm-2 col-3">From </span>
+                <span className="col-sm-4 col-8">: 313 Tra Vinh, Viet Nam</span>
               </div>
 
               <div className="info-container  row my-2">
                 {" "}
-                <span className="col-2">Language </span>
-                <span className="col-4">: EngLish, Vietnamese</span>
+                <span className="col-sm-2 col-3">Language </span>
+                <span className="col-sm-4 col-9">: EngLish, Vietnamese</span>
               </div>
 
               <div className="info-container  row my-2">
                 {" "}
-                <span className="col-2">FreeLance</span>
-                <span className="col-4">: Available</span>
+                <span className="col-sm-2 col-3">FreeLance</span>
+                <span className="col-sm-4 col-4">: Available</span>
               </div>
             </div>
-            <div className="download-cv">
+            <div className="download-cv  col-12">
               <button className="btn-download">Download CV</button>
             </div>
           </div>
@@ -147,7 +152,7 @@ function MyComponent() {
       <div className="container">
         <div className="row block-container">
           <div
-            className="col-3 block-content mx-2 my-2 p-3"
+            className=" col-11 col-sm-3 block-content mx-2 my-2 p-3"
             data-aos="fade-right"
           >
             <div className="block-image-content mx-auto my-3">
@@ -162,7 +167,7 @@ function MyComponent() {
             </div>
           </div>
           <div
-            className="col-3 block-content mx-2 my-2 p-3"
+            className="col-11 col-sm-3 block-content mx-2 my-2 p-3"
             data-aos="fade-down"
           >
             <div className="block-image-content mx-auto my-3">
@@ -177,7 +182,7 @@ function MyComponent() {
             </div>
           </div>
           <div
-            className="col-3 block-content mx-2 my-2 p-3"
+            className="col-11 col-sm-3 block-content mx-2 my-2 p-3"
             data-aos="fade-left"
           >
             <div className="block-image-content mx-auto my-3">
@@ -192,7 +197,7 @@ function MyComponent() {
             </div>
           </div>
           <div
-            className="col-3 block-content mx-2 my-2 p-3"
+            className="col-11 col-sm-3 block-content mx-2 my-2 p-3"
             data-aos="fade-right"
           >
             <div className="block-image-content mx-auto my-3">
@@ -206,7 +211,10 @@ function MyComponent() {
               </p>
             </div>
           </div>
-          <div className="col-3 block-content mx-2 my-2 p-3" data-aos="fade-up">
+          <div
+            className="col-11 col-sm-3 block-content mx-2 my-2 p-3"
+            data-aos="fade-up"
+          >
             <div className="block-image-content mx-auto my-3">
               <img src={icon5} alt="" className="my-4" />
             </div>
@@ -219,7 +227,7 @@ function MyComponent() {
             </div>
           </div>
           <div
-            className="col-3 block-content mx-2 my-2 p-3"
+            className="col-11 col-sm-3 block-content mx-2 my-2 p-3"
             data-aos="fade-left"
           >
             <div className="block-image-content mx-auto my-3">

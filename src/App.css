@@ -10,12 +10,14 @@
     #0a101e 70%,
     #0a101e 90%
   );
+  /* max-width: auto; */
 }
 
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
   font-family: "Times New Roman", Times, serif;
+  width: 100%;
 }
 
 .App-logo {
