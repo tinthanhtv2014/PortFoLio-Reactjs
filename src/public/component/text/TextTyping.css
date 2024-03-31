@@ -61,6 +61,7 @@
     overflow: hidden;
     border-right: 4px solid black;
     animation: typing 4s steps(22) infinite, caret 0.5s steps(2) infinite;
+    margin-left: 110px;
   }
 }
 

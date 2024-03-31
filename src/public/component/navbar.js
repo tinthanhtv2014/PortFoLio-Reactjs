@@ -15,6 +15,8 @@ import icon6 from "../image/icon6.png";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import TextTyping from "./text/TextTyping";
 import "../css/navbarReponSive.css";
+import Carousel from "react-bootstrap/Carousel";
+
 AOS.init();
 function MyComponent() {
   return (
@@ -53,7 +55,7 @@ function MyComponent() {
           </Nav>
         </Container>
       </Navbar>
-      <div className="image-content" id="home">
+      {/* <div className="image-content" id="home">
         <img src={logo} alt="banner" />
         <div className="content">
           <div data-aos="zoom-out-down" className="content-animation">
@@ -61,8 +63,65 @@ function MyComponent() {
             <TextTyping className="texttyping" />
           </div>
         </div>
-      </div>
+      </div> */}
+      <Carousel id="home">
+        <Carousel.Item className="image-content">
+          <img className="d-block w-100" src={logo} alt="First slide" />
+          <div className="content mx-auto">
+            <div data-aos="zoom-out-down" className="content-animation">
+              <h4>HELLO </h4>
+              <TextTyping className="texttyping" />
+            </div>
+          </div>
+          <Carousel.Caption className="captionn">
+            <h3>
+              <span>I'm</span>
+              <span>not</span>
+              <span>a</span>
+              <span>great</span>
+              <span>programmer;</span>
+              <span>I'm</span>
+              <span>just</span>
+              <span>a</span>
+              <span>good</span>
+              <span>programmer</span>
+              <span>with</span>
+              <span>great</span>
+              <span>habits.</span>
+            </h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
 
+        <Carousel.Item className="image-content">
+          <img className="d-block w-100" src={logo} alt="Second slide" />
+          <div className="content mx-auto">
+            <div data-aos="zoom-out-down" className="content-animation">
+              <h4>HELLO </h4>
+              <TextTyping className="texttyping" />
+            </div>
+          </div>
+          <Carousel.Caption className="captionnn">
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item className="image-content">
+          <img className="d-block w-100" src={logo} alt="Third slide" />
+          <div className="content mx-auto">
+            <div data-aos="zoom-out-down" className="content-animation">
+              <h4>HELLO </h4>
+              <TextTyping className="texttyping" />
+            </div>
+          </div>
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+      {/* -----------------------------------interval={1000}------------------------------------- */}
       <div id="about" className="my-4"></div>
 
       <div className="my-5 abount">
