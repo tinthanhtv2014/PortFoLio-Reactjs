@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  .wrap {
+  .wrap3 {
     width: auto;
     height: auto;
     justify-content: center;
@@ -9,7 +9,7 @@
     text-align: center;
   }
 
-  .Textyping-h1 {
+  .Textyping3-h1 {
     font-size: 12px;
     font-family: monospace;
     color: white;
@@ -44,7 +44,7 @@
 
 @media (min-width: 480px) {
   /* smartphones, Android phones, landscape iPhone */
-  .wrap {
+  .wrap3 {
     width: auto;
     height: auto;
     justify-content: center;
@@ -52,7 +52,7 @@
     display: flex;
   }
 
-  .Textyping-h1 {
+  .Textyping3-h1 {
     font-size: 17px;
     font-family: monospace;
     color: white;
@@ -61,12 +61,12 @@
     overflow: hidden;
     border-right: 4px solid black;
     animation: typing 4s steps(22) infinite, caret 0.5s steps(2) infinite;
-    margin-left: 156px;
+    margin-left: 190px;
   }
 }
 
 @media (min-width: 600px) {
-  .wrap {
+  .wrap3 {
     width: auto;
     height: auto;
     justify-content: center;
@@ -74,7 +74,7 @@
     display: flex;
   }
 
-  .Textyping-h1 {
+  .Textyping3-h1 {
     font-size: 25px;
     font-family: monospace;
     color: white;
@@ -90,7 +90,7 @@
 
 @media (min-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
-  .wrap {
+  .wrap3 {
     width: auto;
     height: auto;
     justify-content: center;
@@ -98,7 +98,7 @@
     display: flex;
   }
 
-  .Textyping-h1 {
+  .Textyping3-h1 {
     font-size: 25px;
     font-family: monospace;
     color: white;
@@ -112,7 +112,7 @@
 
 @media (min-width: 554px) {
   /* big landscape tablets, laptops, and desktops */
-  .wrap {
+  .wrap3 {
     width: auto;
     height: auto;
     justify-content: center;
@@ -120,7 +120,7 @@
     display: flex;
   }
 
-  .Textyping-h1 {
+  .Textyping3-h1 {
     font-size: 40px;
     font-family: monospace;
     color: white;
@@ -134,7 +134,7 @@
 
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
-  .wrap {
+  .wrap3 {
     width: auto;
     height: auto;
     justify-content: center;
@@ -142,14 +142,14 @@
     display: flex;
   }
 
-  .Textyping-h1 {
+  .Textyping3-h1 {
     font-family: monospace;
     color: white;
     letter-spacing: 3px;
     white-space: nowrap;
     overflow: hidden;
     border-right: 4px solid black;
-    animation: typing1281 4s steps(22) infinite alternate,
+    animation: typing12813 4s steps(22) infinite alternate,
       caret1281 0.5s steps(2) infinite;
   }
 
@@ -163,13 +163,13 @@
     }
   }
 
-  @keyframes typing1281 {
+  @keyframes typing12813 {
     from {
       width: 0;
     }
 
     to {
-      width: 470px;
+      width: 395px;
     }
   }
 }

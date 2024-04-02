@@ -70,6 +70,14 @@
   color: white;
 }
 
+.content-animation .h11 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.content-animation .texttyping {
+  font-weight: 300;
+}
+
 .sec-text {
   font-family: monospace;
   color: black;
@@ -287,6 +295,7 @@
   opacity: 0;
   filter: blur(4px);
   margin: 2.5px;
+  color: rgb(255, 255, 255);
 }
 
 .captionn h3 span:nth-child(1) {
@@ -383,5 +392,250 @@
   100% {
     opacity: 1;
     margin-bottom: 0.5rem;
+  }
+}
+
+.lineUp {
+  animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* 
+----------------------------- */
+
+.content1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 160px;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #ecf0f1;
+}
+
+.content1__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+  position: relative;
+}
+
+.content1__container:before {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+  color: #16a085;
+  font-size: 42px;
+  line-height: 40px;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.content1__container:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #16a085;
+  font-size: 42px;
+  line-height: 40px;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.content1__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+  font-weight: 200;
+}
+
+.content1__container__list {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.content1__container__list__item {
+  line-height: 40px;
+  margin: 0;
+  color: orange;
+  font-weight: 800;
+}
+@-webkit-keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes change {
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  13.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%,
+  42.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  45.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%,
+  77.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  82.3%,
+  94.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+@-o-keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes change {
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+@-moz-keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes change {
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+@keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes change {
+  0%,
+  12.5%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.5%,
+  29.5% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.5%,
+  46.5% {
+    transform: translate3d(0, -50%, 0);
+  }
+  50.5%,
+  63.5% {
+    transform: translate3d(0, -75%, 0);
+  }
+  67.5%,
+  80.5% {
+    transform: translate3d(0, -50%, 0);
+  }
+  84.5%,
+  97.5% {
+    transform: translate3d(0, -25%, 0);
   }
 }

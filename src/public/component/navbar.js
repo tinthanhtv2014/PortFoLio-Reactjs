@@ -16,7 +16,8 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import TextTyping from "./text/TextTyping";
 import "../css/navbarReponSive.css";
 import Carousel from "react-bootstrap/Carousel";
-
+import TextTyping2 from "./text/TextTyping2";
+import TextTyping3 from "./text/TextTyping3";
 AOS.init();
 function MyComponent() {
   return (
@@ -64,12 +65,28 @@ function MyComponent() {
           </div>
         </div>
       </div> */}
-      <Carousel id="home">
+      <Carousel id="home" fade>
         <Carousel.Item className="image-content">
           <img className="d-block w-100" src={logo} alt="First slide" />
           <div className="content mx-auto">
             <div data-aos="zoom-out-down" className="content-animation">
-              <h4>HELLO </h4>
+              <div className="content1">
+                <div className="content1__container">
+                  <p className="content1__container__text">Hello</p>
+
+                  <ul className="content1__container__list">
+                    <li className="content1__container__list__item">WORLD!</li>
+                    <li className="content1__container__list__item">
+                      CUSTOMER!
+                    </li>
+                    <li className="content1__container__list__item">USERS!</li>
+                    <li className="content1__container__list__item">
+                      EVERYBODY!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h1 className="h11">NGUYEN TIN THANH </h1>
               <TextTyping className="texttyping" />
             </div>
           </div>
@@ -89,7 +106,9 @@ function MyComponent() {
               <span>great</span>
               <span>habits.</span>
             </h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p className="lineUp">
+              Nulla vitae elit libero, a pharetra augue mollis interdum.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -97,13 +116,40 @@ function MyComponent() {
           <img className="d-block w-100" src={logo} alt="Second slide" />
           <div className="content mx-auto">
             <div data-aos="zoom-out-down" className="content-animation">
-              <h4>HELLO </h4>
-              <TextTyping className="texttyping" />
+              <div className="content1">
+                <div className="content1__container">
+                  <p className="content1__container__text">Hello</p>
+
+                  <ul className="content1__container__list">
+                    <li className="content1__container__list__item">WORLD!</li>
+                    <li className="content1__container__list__item">
+                      CUSTOMER!
+                    </li>
+                    <li className="content1__container__list__item">USERS!</li>
+                    <li className="content1__container__list__item">
+                      EVERYBODY!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h1 className="h11">NGUYEN TIN THANH </h1>
+              <TextTyping2 className="texttyping" />
             </div>
           </div>
-          <Carousel.Caption className="captionnn">
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <Carousel.Caption className="captionn">
+            <h3>
+              <span>First,</span>
+              <span>solve</span>
+              <span>the</span>
+              <span>problem.</span>
+              <span>Then,</span>
+              <span>write</span>
+              <span>the</span>
+              <span>code</span>
+            </h3>
+            <p className="lineUp">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -111,13 +157,40 @@ function MyComponent() {
           <img className="d-block w-100" src={logo} alt="Third slide" />
           <div className="content mx-auto">
             <div data-aos="zoom-out-down" className="content-animation">
-              <h4>HELLO </h4>
-              <TextTyping className="texttyping" />
+              <div className="content1">
+                <div className="content1__container">
+                  <p className="content1__container__text">Hello</p>
+
+                  <ul className="content1__container__list">
+                    <li className="content1__container__list__item">WORLD!</li>
+                    <li className="content1__container__list__item">
+                      CUSTOMER!
+                    </li>
+                    <li className="content1__container__list__item">USERS!</li>
+                    <li className="content1__container__list__item">
+                      EVERYBODY!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <h1 className="h11">NGUYEN TIN THANH </h1>
+              <TextTyping3 className="texttyping" />
             </div>
           </div>
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl</p>
+          <Carousel.Caption className="captionn">
+            <h3>
+              <span>Never</span>
+              <span>dream</span>
+              <span>about</span>
+              <span>success.</span>
+              <span>Work</span>
+              <span>for</span>
+              <span>it</span>
+            </h3>
+            <p className="lineUp">
+              Praesent commodo cursus magna, vel scelerisque nisl
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
