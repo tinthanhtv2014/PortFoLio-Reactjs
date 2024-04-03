@@ -12,6 +12,8 @@ import icon3 from "../image/icon3.png";
 import icon4 from "../image/icon4.png";
 import icon5 from "../image/icon5.png";
 import icon6 from "../image/icon6.png";
+import icon7 from "../image/resume-icon1.png";
+import icon8 from "../image/resume-icon2.png";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import TextTyping from "./text/TextTyping";
 import "../css/navbarReponSive.css";
@@ -38,7 +40,7 @@ function MyComponent() {
             <Nav.Link href="#about" className="navbar-item ">
               About
             </Nav.Link>
-            <Nav.Link href="#service" className="navbar-item ">
+            <Nav.Link href="#education" className="navbar-item ">
               Education
             </Nav.Link>
             <Nav.Link href="#skills" className="navbar-item ">
@@ -66,7 +68,7 @@ function MyComponent() {
         </div>
       </div> */}
       <Carousel id="home" fade>
-        <Carousel.Item className="image-content">
+        <Carousel.Item className="image-content" interval={3000}>
           <img className="d-block w-100" src={logo} alt="First slide" />
           <div className="content mx-auto">
             <div data-aos="zoom-out-down" className="content-animation">
@@ -86,7 +88,7 @@ function MyComponent() {
                   </ul>
                 </div>
               </div>
-              <h1 className="h11">NGUYEN TIN THANH </h1>
+              <h1 className="h11">I'M NGUYEN TIN THANH </h1>
               <TextTyping className="texttyping" />
             </div>
           </div>
@@ -112,7 +114,7 @@ function MyComponent() {
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item className="image-content">
+        <Carousel.Item className="image-content" interval={3000}>
           <img className="d-block w-100" src={logo} alt="Second slide" />
           <div className="content mx-auto">
             <div data-aos="zoom-out-down" className="content-animation">
@@ -132,7 +134,7 @@ function MyComponent() {
                   </ul>
                 </div>
               </div>
-              <h1 className="h11">NGUYEN TIN THANH </h1>
+              <h1 className="h11">I'M NGUYEN TIN THANH </h1>
               <TextTyping2 className="texttyping" />
             </div>
           </div>
@@ -153,7 +155,7 @@ function MyComponent() {
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item className="image-content">
+        <Carousel.Item className="image-content" interval={3000}>
           <img className="d-block w-100" src={logo} alt="Third slide" />
           <div className="content mx-auto">
             <div data-aos="zoom-out-down" className="content-animation">
@@ -174,7 +176,7 @@ function MyComponent() {
                 </div>
               </div>
 
-              <h1 className="h11">NGUYEN TIN THANH </h1>
+              <h1 className="h11">I'M NGUYEN TIN THANH </h1>
               <TextTyping3 className="texttyping" />
             </div>
           </div>
@@ -275,7 +277,7 @@ function MyComponent() {
       <div id="service" className="my-4"></div>
       <br />
       <br />
-
+      {/* -----------------------------------interval={1000}------------------------------------- */}
       <div className="my-5 abount">
         <div className="info-nen">SERVICE</div>
         <h1 className="h1-content my-3">SERVICE</h1>
@@ -371,6 +373,110 @@ function MyComponent() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                 eos nesciunt temporibus vero, quam ducimus ipsum minima animi a
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* -----------------------------------interval={1000}------------------------------------- */}
+
+      <div id="education" className="my-4"></div>
+
+      <div className="my-5 abount">
+        <div className="info-nen">EDUCATION</div>
+        <h1 className="h1-content my-3">EDUCATION</h1>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-6 expe-h1">
+            <div className="img-h1-content">
+              <div className="img-h1-content-img my-4">
+                <img src={icon7} alt="" />
+              </div>
+              <h1 className="my-4">Education</h1>
+            </div>
+
+            <div className="experience">
+              <div className="experience-content">
+                <h2>Master of Computer Science</h2>
+                <h4>Feb 2023 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
+              <div className="experience-content">
+                {" "}
+                <h2>Bachelor of Computer Science</h2>
+                <h4>Jan 2024 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
+              <div className="experience-content">
+                {" "}
+                <h2>Diploma in Computer Science</h2>
+                <h4>Jan 2020 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* --------------------- */}
+          <div className="col-6 expe-h1">
+            <div className="img-h1-content">
+              <div className="img-h1-content-img my-4">
+                <img src={icon8} alt="" />
+              </div>
+              <h1 className="my-4">Experience</h1>
+            </div>
+            <div className="experience">
+              <div className="experience-content">
+                <h2>Senior UX/UI Designer</h2>
+                <h4>Jan 2020 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
+              <div className="experience-content">
+                {" "}
+                <h2>Product Designer</h2>
+                <h4>Jan 2020 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
+              <div className="experience-content">
+                {" "}
+                <h2> UX/UI Designer</h2>
+                <h4>Jan 2020 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
             </div>
           </div>
         </div>
