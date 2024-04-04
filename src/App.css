@@ -4,11 +4,11 @@
   /* background-color: rgb(10, 16, 30); */
   background: linear-gradient(
     to bottom,
-    #070d1b 63%,
-    rgb(10, 16, 30) 63%,
-    rgb(10, 16, 30) 70%,
-    #0a101e 70%,
-    #0a101e 90%
+    #070d1b 48%,
+    rgb(10, 16, 30) 48%,
+    rgb(10, 16, 30) 73%,
+    #070d1b 73%,
+    #070d1b 90%
   );
   /* max-width: auto; */
 }

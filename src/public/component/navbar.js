@@ -40,11 +40,11 @@ function MyComponent() {
             <Nav.Link href="#about" className="navbar-item ">
               About
             </Nav.Link>
+            <Nav.Link href="#service" className="navbar-item ">
+              Skills
+            </Nav.Link>
             <Nav.Link href="#education" className="navbar-item ">
               Education
-            </Nav.Link>
-            <Nav.Link href="#skills" className="navbar-item ">
-              Skills
             </Nav.Link>
             <Nav.Link href="#projects" className="navbar-item ">
               Projects
@@ -387,15 +387,20 @@ function MyComponent() {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-6 expe-h1">
-            <div className="img-h1-content">
+          <div className="col-12 col-sm-6 expe-h1">
+            <div className="img-h1-content" data-aos="zoom-in-right">
               <div className="img-h1-content-img my-4">
                 <img src={icon7} alt="" />
               </div>
               <h1 className="my-4">Education</h1>
             </div>
 
-            <div className="experience">
+            <div
+              className="experience"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="experience-content">
                 <h2>Master of Computer Science</h2>
                 <h4>Feb 2023 - Present</h4>
@@ -434,14 +439,19 @@ function MyComponent() {
             </div>
           </div>
           {/* --------------------- */}
-          <div className="col-6 expe-h1">
-            <div className="img-h1-content">
+          <div className="col-12 col-sm-6 expe-h1">
+            <div className="img-h1-content" data-aos="zoom-in-left">
               <div className="img-h1-content-img my-4">
                 <img src={icon8} alt="" />
               </div>
               <h1 className="my-4">Experience</h1>
             </div>
-            <div className="experience">
+            <div
+              className="experience"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="experience-content">
                 <h2>Senior UX/UI Designer</h2>
                 <h4>Jan 2020 - Present</h4>
