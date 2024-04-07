@@ -491,6 +491,121 @@ function MyComponent() {
           </div>
         </div>
       </div>
+
+      {/* ---------------------------------------------------- */}
+
+      <div id="projects" className="my-4"></div>
+
+      <div className="my-5 abount">
+        <div className="info-nen">PROJECTS</div>
+        <h1 className="h1-content my-3">PROJECTS</h1>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-sm-6 expe-h1">
+            <div className="img-h1-content" data-aos="zoom-in-right">
+              <div className="img-h1-content-img my-4">
+                <img src={icon7} alt="" />
+              </div>
+              <h1 className="my-4">Education</h1>
+            </div>
+
+            <div
+              className="experience"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <div className="experience-content">
+                <h2>Master of Computer Science</h2>
+                <h4>Feb 2023 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
+              <div className="experience-content">
+                {" "}
+                <h2>Bachelor of Computer Science</h2>
+                <h4>Jan 2024 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
+              <div className="experience-content">
+                {" "}
+                <h2>Diploma in Computer Science</h2>
+                <h4>Jan 2020 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* --------------------- */}
+          <div className="col-12 col-sm-6 expe-h1">
+            <div className="img-h1-content" data-aos="zoom-in-left">
+              <div className="img-h1-content-img my-4">
+                <img src={icon8} alt="" />
+              </div>
+              <h1 className="my-4">Experience</h1>
+            </div>
+            <div
+              className="experience"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <div className="experience-content">
+                <h2>Senior UX/UI Designer</h2>
+                <h4>Jan 2020 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
+              <div className="experience-content">
+                {" "}
+                <h2>Product Designer</h2>
+                <h4>Jan 2020 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
+              <div className="experience-content">
+                {" "}
+                <h2> UX/UI Designer</h2>
+                <h4>Jan 2020 - Present</h4>
+                <h3>Bergnaum, Hills and Howe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  nihil quis voluptatem impedit, illo facilis aspernatur
+                  distinctio repudiandae eius. At explicabo tempore eius non
+                  consectetur. Nobis praesentium rem accusantium molestias!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
