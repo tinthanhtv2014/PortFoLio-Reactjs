@@ -207,11 +207,46 @@
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(65, 63, 63);
+  position: relative;
+  padding: 0%;
 }
 
 .block-container {
   display: flex;
   justify-content: center;
+}
+
+.position-block1 {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.position-block2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* border: 1px solid rgb(65, 63, 63); */
+  background-color: aqua;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .block-content:hover > .position-block2 {
+  display: block;
+} */
+
+.position-block1 img {
+  width: 100%;
+  height: 100%;
+  /* padding-left: 20px; */
+  overflow: hidden;
+}
+
+.position-block1 img:hover {
+  transform: scale(1.2);
 }
 
 .block-image-content {

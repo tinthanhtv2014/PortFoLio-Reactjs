@@ -14,6 +14,12 @@ import icon5 from "../image/icon5.png";
 import icon6 from "../image/icon6.png";
 import icon7 from "../image/resume-icon1.png";
 import icon8 from "../image/resume-icon2.png";
+import icon9 from "../image/portfolio1.jpg";
+import icon10 from "../image/portfolio2.jpg";
+import icon11 from "../image/portfolio3_lg.jpg";
+import icon12 from "../image/portfolio4_lg.jpg";
+import icon13 from "../image/portfolio5_lg.jpg";
+import icon14 from "../image/portfolio6_lg.jpg";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import TextTyping from "./text/TextTyping";
 import "../css/navbarReponSive.css";
@@ -501,108 +507,60 @@ function MyComponent() {
         <h1 className="h1-content my-3">PROJECTS</h1>
       </div>
       <div className="container">
-        <div className="row">
-          <div className="col-12 col-sm-6 expe-h1">
-            <div className="img-h1-content" data-aos="zoom-in-right">
-              <div className="img-h1-content-img my-4">
-                <img src={icon7} alt="" />
-              </div>
-              <h1 className="my-4">Education</h1>
+        <div className="row block-container">
+          <div
+            className=" col-11 col-sm-3 block-content mx-2 my-2 "
+            data-aos="fade-right"
+          >
+            <div className="position-block1 px-0">
+              <img src={icon9} alt="" />
             </div>
-
-            <div
-              className="experience"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
-              <div className="experience-content">
-                <h2>Master of Computer Science</h2>
-                <h4>Feb 2023 - Present</h4>
-                <h3>Bergnaum, Hills and Howe</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                  nihil quis voluptatem impedit, illo facilis aspernatur
-                  distinctio repudiandae eius. At explicabo tempore eius non
-                  consectetur. Nobis praesentium rem accusantium molestias!
-                </p>
-              </div>
-              <div className="experience-content">
-                {" "}
-                <h2>Bachelor of Computer Science</h2>
-                <h4>Jan 2024 - Present</h4>
-                <h3>Bergnaum, Hills and Howe</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                  nihil quis voluptatem impedit, illo facilis aspernatur
-                  distinctio repudiandae eius. At explicabo tempore eius non
-                  consectetur. Nobis praesentium rem accusantium molestias!
-                </p>
-              </div>
-              <div className="experience-content">
-                {" "}
-                <h2>Diploma in Computer Science</h2>
-                <h4>Jan 2020 - Present</h4>
-                <h3>Bergnaum, Hills and Howe</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                  nihil quis voluptatem impedit, illo facilis aspernatur
-                  distinctio repudiandae eius. At explicabo tempore eius non
-                  consectetur. Nobis praesentium rem accusantium molestias!
-                </p>
-              </div>
-            </div>
+            <div className="position-block2 ">ádadadasđa</div>
           </div>
-          {/* --------------------- */}
-          <div className="col-12 col-sm-6 expe-h1">
-            <div className="img-h1-content" data-aos="zoom-in-left">
-              <div className="img-h1-content-img my-4">
-                <img src={icon8} alt="" />
-              </div>
-              <h1 className="my-4">Experience</h1>
+          <div
+            className="col-11 col-sm-3 block-content mx-2 my-2 "
+            data-aos="fade-down"
+          >
+            <div className="position-block1 px-0">
+              <img src={icon14} alt="" />
             </div>
-            <div
-              className="experience"
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
-              <div className="experience-content">
-                <h2>Senior UX/UI Designer</h2>
-                <h4>Jan 2020 - Present</h4>
-                <h3>Bergnaum, Hills and Howe</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                  nihil quis voluptatem impedit, illo facilis aspernatur
-                  distinctio repudiandae eius. At explicabo tempore eius non
-                  consectetur. Nobis praesentium rem accusantium molestias!
-                </p>
-              </div>
-              <div className="experience-content">
-                {" "}
-                <h2>Product Designer</h2>
-                <h4>Jan 2020 - Present</h4>
-                <h3>Bergnaum, Hills and Howe</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                  nihil quis voluptatem impedit, illo facilis aspernatur
-                  distinctio repudiandae eius. At explicabo tempore eius non
-                  consectetur. Nobis praesentium rem accusantium molestias!
-                </p>
-              </div>
-              <div className="experience-content">
-                {" "}
-                <h2> UX/UI Designer</h2>
-                <h4>Jan 2020 - Present</h4>
-                <h3>Bergnaum, Hills and Howe</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                  nihil quis voluptatem impedit, illo facilis aspernatur
-                  distinctio repudiandae eius. At explicabo tempore eius non
-                  consectetur. Nobis praesentium rem accusantium molestias!
-                </p>
-              </div>
+            <div></div>
+          </div>
+          <div
+            className="col-11 col-sm-3 block-content mx-2 my-2 "
+            data-aos="fade-left"
+          >
+            <div className="position-block1 px-0">
+              <img src={icon10} alt="" />
             </div>
+            <div></div>
+          </div>
+          <div
+            className="col-11 col-sm-3 block-content mx-2 my-2 "
+            data-aos="fade-right"
+          >
+            <div className="position-block1 px-0">
+              <img src={icon11} alt="" />
+            </div>
+            <div></div>
+          </div>
+          <div
+            className="col-11 col-sm-3 block-content mx-2 my-2 "
+            data-aos="fade-up"
+          >
+            <div className="position-block1 px-0">
+              <img src={icon12} alt="" />
+            </div>
+            <div></div>
+          </div>
+          <div
+            className="col-11 col-sm-3 block-content mx-2 my-2 "
+            data-aos="fade-left"
+          >
+            <div className="position-block1 px-0">
+              <img src={icon13} alt="" />
+            </div>
+            <div></div>
           </div>
         </div>
       </div>
