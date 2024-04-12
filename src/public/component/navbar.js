@@ -213,7 +213,9 @@ function MyComponent() {
 
       <div className="my-5 abount">
         <div className="info-nen">ABOUT ME</div>
-        <h1 className="h1-content my-3">ABOUT ME</h1>
+        <h1 className="h1-content my-3" data-aos="fade-up">
+          ABOUT ME
+        </h1>
       </div>
       <div className="container color-container">
         <div className="row">
@@ -292,7 +294,9 @@ function MyComponent() {
       {/* -----------------------------------interval={1000}------------------------------------- */}
       <div className="my-5 abount">
         <div className="info-nen">SERVICE</div>
-        <h1 className="h1-content my-3">SERVICE</h1>
+        <h1 className="h1-content my-3" data-aos="fade-up">
+          SERVICE
+        </h1>
       </div>
 
       <div className="container">
@@ -395,7 +399,9 @@ function MyComponent() {
 
       <div className="my-5 abount">
         <div className="info-nen">EDUCATION</div>
-        <h1 className="h1-content my-3">EDUCATION</h1>
+        <h1 className="h1-content my-3" data-aos="fade-up">
+          EDUCATION
+        </h1>
       </div>
       <div className="container">
         <div className="row">
@@ -510,7 +516,9 @@ function MyComponent() {
 
       <div className="my-5 abount">
         <div className="info-nen">PROJECTS</div>
-        <h1 className="h1-content my-3">PROJECTS</h1>
+        <h1 className="h1-content my-3" data-aos="fade-up">
+          PROJECTS
+        </h1>
       </div>
       <div className="container">
         <div className="row block-container">
@@ -528,7 +536,7 @@ function MyComponent() {
                     <i class="fab fa-node-js"></i>
                   </a>
                 </h1>
-                <h4>Product Design</h4>
+                <h3>Product Design</h3>
                 <h5>JavaScript Design</h5>
               </div>
             </div>
@@ -547,7 +555,7 @@ function MyComponent() {
                     <i class="fab fa-node"></i>
                   </a>
                 </h1>
-                <h4>Product Design</h4>
+                <h3>Product Design</h3>
                 <h5>NodeJs Server</h5>
               </div>
             </div>
@@ -566,7 +574,7 @@ function MyComponent() {
                     <i class="fab fa-react"></i>
                   </a>
                 </h1>
-                <h4>Product Design</h4>
+                <h3>Product Design</h3>
                 <h5>ReactJs Client</h5>
               </div>
             </div>
@@ -585,7 +593,7 @@ function MyComponent() {
                     <i class="fa-solid fa-database"></i>
                   </a>
                 </h1>
-                <h4>Product Design</h4>
+                <h3>Product Design</h3>
                 <h5>MySQL Database</h5>
               </div>
             </div>
@@ -604,7 +612,7 @@ function MyComponent() {
                     <i class="fa-solid fa-server"></i>
                   </a>
                 </h1>
-                <h4>Product Design</h4>
+                <h3>Product Design</h3>
                 <h5>SQL Server Database</h5>
               </div>
             </div>
@@ -623,7 +631,7 @@ function MyComponent() {
                     <i class="fab fa-docker"></i>
                   </a>
                 </h1>
-                <h4>Product Design</h4>
+                <h3>Product Design</h3>
                 <h5>Docker Deploy</h5>
               </div>
             </div>

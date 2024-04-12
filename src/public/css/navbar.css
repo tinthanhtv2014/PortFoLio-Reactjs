@@ -289,8 +289,9 @@
   color: orange;
 }
 
-.position-block2-content h4 {
+.position-block2-content h3 {
   color: white;
+  font-weight: 300;
 }
 
 .block-info-content h3 {
