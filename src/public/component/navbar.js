@@ -20,6 +20,12 @@ import icon11 from "../image/portfolio3_lg.jpg";
 import icon12 from "../image/portfolio4_lg.jpg";
 import icon13 from "../image/portfolio5_lg.jpg";
 import icon14 from "../image/portfolio6_lg.jpg";
+import icon15 from "../image/301_docker.jpg";
+import icon17 from "../image/microsoft-sql-server4529.jpg";
+import icon16 from "../image/js-emblem-orange-shield-and-white-text-vector.jpg";
+import icon18 from "../image/mysql.jpg";
+import icon19 from "../image/react.jpg";
+import icon20 from "../image/portfolio7_lg.jpg";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import TextTyping from "./text/TextTyping";
 import "../css/navbarReponSive.css";
@@ -513,54 +519,114 @@ function MyComponent() {
             data-aos="fade-right"
           >
             <div className="position-block1 px-0">
-              <img src={icon9} alt="" />
+              <img src={icon16} alt="" />
             </div>
-            <div className="position-block2 ">ádadadasđa</div>
+            <div className="position-block2 ">
+              <div className="position-block2-content">
+                <h1>
+                  <a href="#">
+                    <i class="fab fa-node-js"></i>
+                  </a>
+                </h1>
+                <h4>Product Design</h4>
+                <h5>JavaScript Design</h5>
+              </div>
+            </div>
           </div>
           <div
             className="col-11 col-sm-3 block-content mx-2 my-2 "
             data-aos="fade-down"
           >
             <div className="position-block1 px-0">
-              <img src={icon14} alt="" />
+              <img src={icon20} alt="" />
             </div>
-            <div></div>
+            <div className="position-block2 ">
+              <div className="position-block2-content">
+                <h1>
+                  <a href="#">
+                    <i class="fab fa-node"></i>
+                  </a>
+                </h1>
+                <h4>Product Design</h4>
+                <h5>NodeJs Server</h5>
+              </div>
+            </div>
           </div>
           <div
             className="col-11 col-sm-3 block-content mx-2 my-2 "
             data-aos="fade-left"
           >
             <div className="position-block1 px-0">
-              <img src={icon10} alt="" />
+              <img src={icon19} alt="" />
             </div>
-            <div></div>
+            <div className="position-block2 ">
+              <div className="position-block2-content">
+                <h1>
+                  <a href="#">
+                    <i class="fab fa-react"></i>
+                  </a>
+                </h1>
+                <h4>Product Design</h4>
+                <h5>ReactJs Client</h5>
+              </div>
+            </div>
           </div>
           <div
             className="col-11 col-sm-3 block-content mx-2 my-2 "
             data-aos="fade-right"
           >
             <div className="position-block1 px-0">
-              <img src={icon11} alt="" />
+              <img src={icon18} alt="" />
             </div>
-            <div></div>
+            <div className="position-block2 ">
+              <div className="position-block2-content">
+                <h1>
+                  <a href="#">
+                    <i class="fa-solid fa-database"></i>
+                  </a>
+                </h1>
+                <h4>Product Design</h4>
+                <h5>MySQL Database</h5>
+              </div>
+            </div>
           </div>
           <div
             className="col-11 col-sm-3 block-content mx-2 my-2 "
             data-aos="fade-up"
           >
             <div className="position-block1 px-0">
-              <img src={icon12} alt="" />
+              <img src={icon17} alt="" />
             </div>
-            <div></div>
+            <div className="position-block2 ">
+              <div className="position-block2-content">
+                <h1>
+                  <a href="#">
+                    <i class="fa-solid fa-server"></i>
+                  </a>
+                </h1>
+                <h4>Product Design</h4>
+                <h5>SQL Server Database</h5>
+              </div>
+            </div>
           </div>
           <div
             className="col-11 col-sm-3 block-content mx-2 my-2 "
             data-aos="fade-left"
           >
             <div className="position-block1 px-0">
-              <img src={icon13} alt="" />
+              <img src={icon15} alt="" />
             </div>
-            <div></div>
+            <div className="position-block2 ">
+              <div className="position-block2-content">
+                <h1>
+                  <a href="#">
+                    <i class="fab fa-docker"></i>
+                  </a>
+                </h1>
+                <h4>Product Design</h4>
+                <h5>Docker Deploy</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
