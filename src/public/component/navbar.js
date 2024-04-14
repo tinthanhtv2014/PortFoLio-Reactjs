@@ -32,8 +32,28 @@ import "../css/navbarReponSive.css";
 import Carousel from "react-bootstrap/Carousel";
 import TextTyping2 from "./text/TextTyping2";
 import TextTyping3 from "./text/TextTyping3";
+import { useState } from "react";
 AOS.init();
 function MyComponent() {
+  const [isFocused, setIsFocused] = useState(false); // State to track focus
+  const [isValid, setIsValid] = useState(false); // State to track validity
+  const [textValue, setTextValue] = useState(""); // State to track textarea value
+
+  // Handle focus event
+  const handleFocus = () => {
+    setIsFocused(true);
+  };
+
+  // Handle blur event
+  const handleBlur = () => {
+    setIsFocused(false);
+  };
+
+  // Handle input event
+  const handleInput = (e) => {
+    setTextValue(e.target.value); // Update textarea value
+    setIsValid(e.target.value.trim() !== ""); // Check validity
+  };
   return (
     <>
       <Navbar
@@ -634,6 +654,89 @@ function MyComponent() {
                 <h3>Product Design</h3>
                 <h5>Docker Deploy</h5>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ------------------------------------------------------------ */}
+
+      <div id="contact" className="my-4"></div>
+
+      <div className="my-5 abount">
+        <div className="info-nen">CONTACT</div>
+        <h1 className="h1-content my-3" data-aos="fade-up">
+          CONTACT
+        </h1>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-sm-6 expe-h1">
+            <div className="img-h1-content" data-aos="zoom-in-right">
+              <h1 className="my-4">Just say hello</h1>
+            </div>
+
+            <div
+              className="contact"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <div className="couple-text">
+                <input type="text" className="text-input" required />
+                <div className="labelline"> Username</div>
+              </div>
+              <div className="couple-text">
+                <input type="text" className="text-input" required />
+                <div className="labelline"> Email</div>
+              </div>
+              <div className="couple-text">
+                <input type="password" required className="text-input" />
+                <div className="labelline"> Password</div>
+              </div>
+
+              <div className={`couple-text ${isFocused ? "focused" : ""}`}>
+                <textarea
+                  name="msg"
+                  id="msg"
+                  cols="20"
+                  rows="10"
+                  className={`text-input1 ${isValid ? "valid" : ""}`}
+                  onFocus={handleFocus}
+                  onBlur={handleBlur}
+                  onInput={handleInput}
+                  value={textValue}
+                ></textarea>
+                <div className="labelline1">Your Message</div>
+              </div>
+            </div>
+          </div>
+          {/* --------------------- */}
+          <div className="col-12 col-sm-6 expe-h1">
+            <div className="img-h1-content" data-aos="zoom-in-left">
+              <h1 className="my-4">Contact</h1>
+            </div>
+            <div
+              className="experience"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque porro illum sequi debitis facere nam magni nostrum! Ea
+              ullam, expedita quis provident libero architecto porro totam
+              quidem minus ratione officia?
+              <h1>dấdasdasd</h1>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque porro illum sequi debitis facere nam magni nostrum! Ea
+              ullam, expedita quis provident libero architecto porro totam
+              quidem minus ratione officia?
+              <h1>dấdasdasd</h1>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque porro illum sequi debitis facere nam magni nostrum! Ea
+              ullam, expedita quis provident libero architecto porro totam
+              quidem minus ratione officia?
+              <h1>dấdasdasd</h1>
             </div>
           </div>
         </div>
