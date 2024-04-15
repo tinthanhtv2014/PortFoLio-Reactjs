@@ -28,9 +28,9 @@ Information about my educational background, including degrees, certifications, 
 
 ### 6. Contact
 
-you can contact me by
-Facebook: https://www.facebook.com/profile.php?id=100034384907284
-Gmail: tinthanhtv2014@gmail.com
+you can contact me by:  <br>
+Facebook: https://www.facebook.com/profile.php?id=100034384907284 <br>
+Gmail: tinthanhtv2014@gmail.com  <br>
 Phone: +84 0395890398
 
 ## Installation Guide
