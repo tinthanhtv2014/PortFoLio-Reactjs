@@ -28,14 +28,16 @@ Information about my educational background, including degrees, certifications, 
 
 ### 6. Contact
 
-A contact form or contact information for visitors to reach out to me to propose new projects or collaboration.
+you can contact me by
+Facebook: https://www.facebook.com/profile.php?id=100034384907284
+Gmail: tinthanhtv2014@gmail.com
+Phone: +84 0395890398
 
 ## Installation Guide
 
-1. Clone the project repository: `git clone <repository-url>`
-2. Navigate to the project directory: `cd <project-directory>`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
+1. Clone the project repository: `git clone https://github.com/tinthanhtv2014/PortFoLio-Reactjs.git `
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
 
 ## Deployment
 
