@@ -19,7 +19,7 @@ This portfolio website is designed to showcase my skills, projects, and experien
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone <repository-url>`
+1. Clone the repository: `git clone https://github.com/tinthanhtv2014/PortFoLio-Reactjs.git`
 2. Navigate to the project directory: `cd <project-directory>`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
