@@ -798,6 +798,8 @@
   width: 100%;
   background-color: #232935;
   transition: none;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .couple-text .labelline {
@@ -896,4 +898,46 @@
   background-color: #0a101e;
   border: 1px solid orange;
   border-top: none;
+}
+
+.button-name {
+  display: flex;
+}
+
+.ntn-button {
+  margin-bottom: 10%;
+  width: 30%;
+  height: 60px;
+  background-color: rgb(245, 223, 31);
+  text-align: center;
+  border-radius: 30px;
+  font-size: 20px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  transition: all 0.5s ease-in;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.ntn-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  z-index: -1;
+  text-align: center;
+  transition: all 0.5s ease-in;
+  overflow: hidden;
+}
+.ntn-button:hover::before {
+  width: 100%;
+}
+
+.couple-text:nth-child(4) {
+  height: 90px;
 }

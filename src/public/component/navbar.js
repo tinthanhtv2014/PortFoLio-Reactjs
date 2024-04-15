@@ -684,15 +684,15 @@ function MyComponent() {
             >
               <div className="couple-text">
                 <input type="text" className="text-input" required />
-                <div className="labelline"> Username</div>
+                <div className="labelline"> Your Name</div>
               </div>
               <div className="couple-text">
                 <input type="text" className="text-input" required />
-                <div className="labelline"> Email</div>
+                <div className="labelline"> Your Email</div>
               </div>
               <div className="couple-text">
-                <input type="password" required className="text-input" />
-                <div className="labelline"> Password</div>
+                <input type="text" required className="text-input" />
+                <div className="labelline"> Your Subject</div>
               </div>
 
               <div className={`couple-text ${isFocused ? "focused" : ""}`}>
@@ -708,6 +708,9 @@ function MyComponent() {
                   value={textValue}
                 ></textarea>
                 <div className="labelline1">Your Message</div>
+              </div>
+              <div className="button-name">
+                <button className="ntn-button">Send Message</button>
               </div>
             </div>
           </div>
