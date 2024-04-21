@@ -725,21 +725,54 @@ function MyComponent() {
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque porro illum sequi debitis facere nam magni nostrum! Ea
-              ullam, expedita quis provident libero architecto porro totam
-              quidem minus ratione officia?
-              <h1>dấdasdasd</h1>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque porro illum sequi debitis facere nam magni nostrum! Ea
-              ullam, expedita quis provident libero architecto porro totam
-              quidem minus ratione officia?
-              <h1>dấdasdasd</h1>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque porro illum sequi debitis facere nam magni nostrum! Ea
-              ullam, expedita quis provident libero architecto porro totam
-              quidem minus ratione officia?
-              <h1>dấdasdasd</h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              incidunt, est non magnam unde sunt veniam ipsum excepturi vero
+              quam reiciendis distinctio deleniti accusamus inventore voluptatum
+              tempore beatae laudantium quidem.
+              <div className="contact-cont my-4 ">
+                <div className="icon-contact mx-3 ">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div className="span-contact ">
+                  <h4>Email</h4>
+                  <span className="span1">tinthanhtv2014@gmail.com</span>
+                  <br />
+                  <span className="span2">info@support.com</span>
+                </div>
+              </div>
+              <div className="contact-cont my-4 ">
+                <div className="icon-contact mx-3 ">
+                  <i class="fas fa-phone-square-alt"></i>
+                </div>
+                <div className="span-contact ">
+                  <h4>Phone</h4>
+                  <span className="span1">+84 0395890398</span>
+                  <br />
+                  <span className="span2">+84 0369589333</span>
+                </div>
+              </div>
+              <div className="contact-cont my-4 ">
+                <div className="icon-contact mx-3 ">
+                  <i class="fas fa-map-marker-alt mx-1"></i>
+                </div>
+                <div className="span-contact ">
+                  <h4>Address</h4>
+                  <span className="span1">
+                    141 Mau Than street, Tra Vinh City
+                  </span>
+                  <br />
+                  <span className="span2">53 Cau Ngang </span>
+                </div>
+              </div>
+              <div className="h3con">
+                <h3>Visit my social profile and get connected</h3>
+              </div>
+              <div className="link-animationcss">
+                <div className="f1">
+                  <i class="far fa-address-card mx-3"></i>
+                  <span className="mx-3">adasdada</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

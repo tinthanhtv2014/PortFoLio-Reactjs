@@ -918,6 +918,7 @@
   position: relative;
   z-index: 2;
   overflow: hidden;
+  animation-delay: 2s;
 }
 
 .ntn-button::before {
@@ -934,10 +935,107 @@
   transition: all 0.5s ease-in;
   overflow: hidden;
 }
+.ntn-button:hover {
+  background: linear-gradient(to right, rgb(245, 223, 31), orange);
+}
+
 .ntn-button:hover::before {
   width: 100%;
 }
 
 .couple-text:nth-child(4) {
   height: 90px;
+}
+
+.contact-cont {
+  display: flex;
+}
+
+.icon-contact {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5% 5%;
+  transition: all 0.2s ease-in;
+  width: 15%;
+  height: 80%;
+  display: flex;
+  align-self: center;
+}
+
+.icon-contact:hover {
+  border: 1px solid orange;
+}
+
+.icon-contact:hover > i {
+  color: orange;
+}
+
+.icon-contact i {
+  /* width: 50px;
+  height: 50px; */
+  font-size: 25px;
+  text-align: center;
+  color: grey;
+  transition: all 0.2s ease-in;
+}
+
+.span-contact h4 {
+  font-weight: 380;
+  font-size: 28px;
+}
+
+.span-contact span {
+  color: grey;
+  font-size: 21px;
+  font-weight: 300;
+  transition: all 0.2s ease-in;
+}
+
+.span-contact .span1:hover {
+  color: orange;
+}
+.span-contact .span2:hover {
+  color: orange;
+}
+
+.contact-cont:hover > .icon-contact {
+  color: orange;
+  cursor: pointer;
+}
+
+.h3con {
+  color: grey;
+}
+
+.h3con h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.link-animationcss {
+}
+
+.f1 {
+  border: 1px solid orange;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  display: flex;
+  transition: all 0.2s ease-in;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.f1 i {
+  font-size: 28px;
+  text-align: center;
+}
+
+.f1 span {
+  font-size: 28px;
+  text-align: center;
+}
+.f1:hover {
+  width: 300px;
+  border-radius: 40px;
 }
