@@ -1013,12 +1013,13 @@
 }
 
 .link-animationcss {
+  display: flex;
 }
 
 .f1 {
-  border: 1px solid orange;
-  width: 70px;
-  height: 70px;
+  border: 1px solid grey;
+  width: 60px;
+  height: 60px;
   overflow: hidden;
   display: flex;
   transition: all 0.2s ease-in;
@@ -1029,13 +1030,42 @@
 .f1 i {
   font-size: 28px;
   text-align: center;
+  margin: 0 auto;
+  color: grey;
+  transition: all 0.4s ease-in;
+  /* transform: translateX(34%); */
+  /* padding: 0 4px; */
 }
 
 .f1 span {
-  font-size: 28px;
-  text-align: center;
+  font-size: 24px;
+
+  color: white;
+  display: flex;
+  margin-bottom: 5px;
 }
-.f1:hover {
-  width: 300px;
+
+.hovered {
+  width: 30%;
   border-radius: 40px;
+  border-color: orange;
+}
+
+.f1:hover > i {
+  text-align: left;
+
+  color: orange;
+  /* transform: translateX(34%); */
+}
+
+.f1:hover {
+  width: 30%;
+  border-radius: 40px;
+  border-color: orange;
+}
+
+.f1.hovered {
+  width: 28.8%;
+  border-radius: 40px;
+  border-color: orange;
 }

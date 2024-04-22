@@ -38,7 +38,7 @@ function MyComponent() {
   const [isFocused, setIsFocused] = useState(false); // State to track focus
   const [isValid, setIsValid] = useState(false); // State to track validity
   const [textValue, setTextValue] = useState(""); // State to track textarea value
-
+  const [hoverIndex, setHoverIndex] = useState(null);
   // Handle focus event
   const handleFocus = () => {
     setIsFocused(true);
@@ -53,6 +53,19 @@ function MyComponent() {
   const handleInput = (e) => {
     setTextValue(e.target.value); // Update textarea value
     setIsValid(e.target.value.trim() !== ""); // Check validity
+  };
+  let leaveTimeout = null;
+
+  const handleMouseEnter = (index) => {
+    setHoverIndex(index);
+    clearTimeout(leaveTimeout); // Hủy hẹn giờ khi di chuyển đến phần tử mới
+  };
+
+  const handleMouseLeave = () => {
+    // Đặt hẹn giờ để thực hiện handleMouseLeave sau một khoảng thời gian
+    leaveTimeout = setTimeout(() => {
+      setHoverIndex(null);
+    }, 30000);
   };
   return (
     <>
@@ -768,9 +781,37 @@ function MyComponent() {
                 <h3>Visit my social profile and get connected</h3>
               </div>
               <div className="link-animationcss">
-                <div className="f1">
-                  <i class="far fa-address-card mx-3"></i>
-                  <span className="mx-3">adasdada</span>
+                <div
+                  className={`f1 mx-3 ${hoverIndex === 0 ? "hovered" : ""}`}
+                  onMouseEnter={() => handleMouseEnter(0)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <i class="fa-brands fa-dribbble mx-3"></i>
+                  <span>Dribble</span>
+                </div>
+                <div
+                  className={`f1 mx-3 ${hoverIndex === 1 ? "hovered" : ""}`}
+                  onMouseEnter={() => handleMouseEnter(1)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <i class="fa-brands fa-twitter mx-3"></i>
+                  <span>Twitter</span>
+                </div>
+                <div
+                  className={`f1 mx-3 ${hoverIndex === 2 ? "hovered" : ""}`}
+                  onMouseEnter={() => handleMouseEnter(2)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <i class="fa-brands fa-behance mx-3"></i>
+                  <span>Behance</span>
+                </div>
+                <div
+                  className={`f1 mx-3 ${hoverIndex === 3 ? "hovered" : ""}`}
+                  onMouseEnter={() => handleMouseEnter(3)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <i class="fa-brands fa-linkedin mx-3"></i>
+                  <span>LinkedIn</span>
                 </div>
               </div>
             </div>
