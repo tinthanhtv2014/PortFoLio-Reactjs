@@ -214,6 +214,7 @@
 .block-container {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .position-block1 {
@@ -733,6 +734,7 @@
   top: 0px;
   left: -63px;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 .experience-content:hover::before {
   background-color: orange !important;
@@ -741,19 +743,23 @@
 .experience-content h2 {
   color: rgb(240, 179, 67);
   font-weight: 300;
+  cursor: pointer;
 }
 
 .experience-content h4 {
   color: rgb(148, 143, 143);
+  cursor: pointer;
 }
 
 .experience-content h3 {
   color: white;
   font-weight: 300;
   font-size: 25px;
+  cursor: pointer;
 }
 .experience-content p {
   color: grey;
+  cursor: pointer;
 }
 
 .img-h1-content {
@@ -1039,7 +1045,7 @@
 .f1 i {
   font-size: 28px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 17px;
   color: grey;
   transition: all 0.4s ease-in;
   /* transform: translateX(34%); */
@@ -1074,7 +1080,7 @@
 }
 
 .f1.hovered {
-  width: 28.8%;
+  width: 32.7%;
   border-radius: 40px;
   border-color: orange;
 }

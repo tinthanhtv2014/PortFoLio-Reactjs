@@ -730,10 +730,10 @@ function MyComponent() {
           {/* --------------------- */}
           <div className="col-12 col-sm-6 expe-h1">
             <div className="img-h1-content" data-aos="zoom-in-left">
-              <h1 className="my-4">Contact</h1>
+              <h1 className="my-sm-4">Contact info</h1>
             </div>
             <div
-              className="experience"
+              className="experience px-0"
               data-aos="fade-left"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -742,8 +742,8 @@ function MyComponent() {
               incidunt, est non magnam unde sunt veniam ipsum excepturi vero
               quam reiciendis distinctio deleniti accusamus inventore voluptatum
               tempore beatae laudantium quidem.
-              <div className="contact-cont my-4 ">
-                <div className="icon-contact mx-3 ">
+              <div className="contact-cont my-sm-4 my-3">
+                <div className="icon-contact mx-sm-3 me-3">
                   <i class="far fa-envelope"></i>
                 </div>
                 <div className="span-contact ">
@@ -753,8 +753,8 @@ function MyComponent() {
                   <span className="span2">info@support.com</span>
                 </div>
               </div>
-              <div className="contact-cont my-4 ">
-                <div className="icon-contact mx-3 ">
+              <div className="contact-cont my-3 my-sm-4">
+                <div className="icon-contact mx-sm-3 me-3">
                   <i class="fas fa-phone-square-alt"></i>
                 </div>
                 <div className="span-contact ">
@@ -764,9 +764,9 @@ function MyComponent() {
                   <span className="span2">+84 0369589333</span>
                 </div>
               </div>
-              <div className="contact-cont my-4 ">
-                <div className="icon-contact mx-3 ">
-                  <i class="fas fa-map-marker-alt mx-1"></i>
+              <div className="contact-cont my-3 my-sm-4 ">
+                <div className="icon-contact mx-sm-3 me-3">
+                  <i class="fas fa-map-marker-alt mx-sm-1"></i>
                 </div>
                 <div className="span-contact ">
                   <h4>Address</h4>
@@ -780,17 +780,19 @@ function MyComponent() {
               <div className="h3con">
                 <h3>Visit my social profile and get connected</h3>
               </div>
-              <div className="link-animationcss">
+              <div className="link-animationcss my-3">
                 <div
-                  className={`f1 mx-3 ${hoverIndex === 0 ? "hovered" : ""}`}
+                  className={`f1  mx-sm-3 ${hoverIndex === 0 ? "hovered" : ""}`}
                   onMouseEnter={() => handleMouseEnter(0)}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <i class="fa-brands fa-dribbble mx-3"></i>
+                  <i class="fa-brands fa-dribbble mx-sm-3"></i>
                   <span>Dribble</span>
                 </div>
                 <div
-                  className={`f1 mx-3 ${hoverIndex === 1 ? "hovered" : ""}`}
+                  className={`f1  mx-1 mx-sm-3 ${
+                    hoverIndex === 1 ? "hovered" : ""
+                  }`}
                   onMouseEnter={() => handleMouseEnter(1)}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -798,19 +800,23 @@ function MyComponent() {
                   <span>Twitter</span>
                 </div>
                 <div
-                  className={`f1 mx-3 ${hoverIndex === 2 ? "hovered" : ""}`}
+                  className={`f1  ml-1 mx-sm-3 ${
+                    hoverIndex === 2 ? "hovered" : ""
+                  }`}
                   onMouseEnter={() => handleMouseEnter(2)}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <i class="fa-brands fa-behance mx-3"></i>
+                  <i class="fa-brands fa-behance mx-sm-3"></i>
                   <span>Behance</span>
                 </div>
                 <div
-                  className={`f1 mx-3 ${hoverIndex === 3 ? "hovered" : ""}`}
+                  className={`f1  mx-1 mx-sm-3 ${
+                    hoverIndex === 3 ? "hovered" : ""
+                  }`}
                   onMouseEnter={() => handleMouseEnter(3)}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <i class="fa-brands fa-linkedin mx-3"></i>
+                  <i class="fa-brands fa-linkedin mx-sm-3"></i>
                   <span>LinkedIn</span>
                 </div>
               </div>
