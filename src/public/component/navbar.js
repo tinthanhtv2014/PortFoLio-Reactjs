@@ -674,6 +674,159 @@ function MyComponent() {
 
       {/* ------------------------------------------------------------ */}
 
+      <div id="experience" className="my-4"></div>
+
+      <div className="my-5 abount">
+        <div className="info-nen">WORK EXPERIENCE</div>
+        <h1 className="h1-content my-3" data-aos="fade-up">
+          WORK EXPERIENCE
+        </h1>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-sm-6 expe-h1">
+            <div className="img-h1-content" data-aos="zoom-in-right">
+              <h1 className="my-4">Just say hello</h1>
+            </div>
+
+            <div
+              className="contact"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <div className="couple-text">
+                <input type="text" className="text-input" required />
+                <div className="labelline"> Your Name</div>
+              </div>
+              <div className="couple-text">
+                <input type="text" className="text-input" required />
+                <div className="labelline"> Your Email</div>
+              </div>
+              <div className="couple-text">
+                <input type="text" required className="text-input" />
+                <div className="labelline"> Your Subject</div>
+              </div>
+
+              <div className={`couple-text ${isFocused ? "focused" : ""}`}>
+                <textarea
+                  name="msg"
+                  id="msg"
+                  cols="20"
+                  rows="10"
+                  className={`text-input1 ${isValid ? "valid" : ""}`}
+                  onFocus={handleFocus}
+                  onBlur={handleBlur}
+                  onInput={handleInput}
+                  value={textValue}
+                ></textarea>
+                <div className="labelline1">Your Message</div>
+              </div>
+              <div className="button-name">
+                <button className="ntn-button">Send Message</button>
+              </div>
+            </div>
+          </div>
+          {/* --------------------- */}
+          <div className="col-12 col-sm-6 expe-h1">
+            <div className="img-h1-content" data-aos="zoom-in-left">
+              <h1 className="my-sm-4">Contact info</h1>
+            </div>
+            <div
+              className="experience px-0"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              incidunt, est non magnam unde sunt veniam ipsum excepturi vero
+              quam reiciendis distinctio deleniti accusamus inventore voluptatum
+              tempore beatae laudantium quidem.
+              <div className="contact-cont my-sm-4 my-3">
+                <div className="icon-contact mx-sm-3 me-3">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div className="span-contact ">
+                  <h4>Email</h4>
+                  <span className="span1">tinthanhtv2014@gmail.com</span>
+                  <br />
+                  <span className="span2">info@support.com</span>
+                </div>
+              </div>
+              <div className="contact-cont my-3 my-sm-4">
+                <div className="icon-contact mx-sm-3 me-3">
+                  <i class="fas fa-phone-square-alt"></i>
+                </div>
+                <div className="span-contact ">
+                  <h4>Phone</h4>
+                  <span className="span1">+84 0395890398</span>
+                  <br />
+                  <span className="span2">+84 0369589333</span>
+                </div>
+              </div>
+              <div className="contact-cont my-3 my-sm-4 ">
+                <div className="icon-contact mx-sm-3 me-3">
+                  <i class="fas fa-map-marker-alt mx-sm-1"></i>
+                </div>
+                <div className="span-contact ">
+                  <h4>Address</h4>
+                  <span className="span1">
+                    141 Mau Than street, Tra Vinh City
+                  </span>
+                  <br />
+                  <span className="span2">53 Cau Ngang </span>
+                </div>
+              </div>
+              <div className="h3con">
+                <h3>Visit my social profile and get connected</h3>
+              </div>
+              <div className="link-animationcss my-3">
+                <div
+                  className={`f1  mx-sm-3 ${hoverIndex === 0 ? "hovered" : ""}`}
+                  onMouseEnter={() => handleMouseEnter(0)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <i class="fa-brands fa-dribbble mx-sm-3"></i>
+                  <span>Dribble</span>
+                </div>
+                <div
+                  className={`f1  mx-1 mx-sm-3 ${
+                    hoverIndex === 1 ? "hovered" : ""
+                  }`}
+                  onMouseEnter={() => handleMouseEnter(1)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <i class="fa-brands fa-twitter mx-3"></i>
+                  <span>Twitter</span>
+                </div>
+                <div
+                  className={`f1  ml-1 mx-sm-3 ${
+                    hoverIndex === 2 ? "hovered" : ""
+                  }`}
+                  onMouseEnter={() => handleMouseEnter(2)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <i class="fa-brands fa-behance mx-sm-3"></i>
+                  <span>Behance</span>
+                </div>
+                <div
+                  className={`f1  mx-1 mx-sm-3 ${
+                    hoverIndex === 3 ? "hovered" : ""
+                  }`}
+                  onMouseEnter={() => handleMouseEnter(3)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <i class="fa-brands fa-linkedin mx-sm-3"></i>
+                  <span>LinkedIn</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ------------------------------------------------------------ */}
+
       <div id="contact" className="my-4"></div>
 
       <div className="my-5 abount">
