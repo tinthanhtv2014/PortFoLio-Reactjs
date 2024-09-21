@@ -903,7 +903,9 @@ function MyComponent() {
                   onMouseLeave={handleMouseLeave}
                 >
                   <i class="fa-brands fa-dribbble mx-sm-3"></i>
-                  <span>Dribble</span>
+                  <span>
+                    <a href="https://github.com/tinthanhtv2014">Github</a>
+                  </span>
                 </div>
                 <div
                   className={`f1  mx-1 mx-sm-3 ${
@@ -923,7 +925,11 @@ function MyComponent() {
                   onMouseLeave={handleMouseLeave}
                 >
                   <i class="fa-brands fa-behance mx-sm-3"></i>
-                  <span>Behance</span>
+                  <span>
+                    <a href="https://www.facebook.com/profile.php?id=100034384907284">
+                      Facebook
+                    </a>
+                  </span>
                 </div>
                 <div
                   className={`f1  mx-1 mx-sm-3 ${
